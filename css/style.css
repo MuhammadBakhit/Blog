@@ -1,0 +1,121 @@
+:root{
+    --withe-color: white;
+    --ancour-color: #007bff;
+    --shado-color1: rgba(0, 0, 0, 0.1);
+    --shado-color2: rgba(0, 0, 0, 0.2);
+}
+
+.up{
+    position: fixed;
+    bottom: 5%;
+    right: -5%;
+    padding: 7px 11px;
+    background: var(--ancour-color);
+    color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.up:hover{
+    background-color: #0056b3;
+}
+.up.show{
+    right: 5%;
+}
+body {
+font-family: Arial, sans-serif;
+background-color: #f4f4f9;
+}
+.header {
+background-color: var(--ancour-color);
+color: var(--withe-color);
+padding: 40px 0;
+text-align: center;
+position: relative;
+}
+.header::after {
+content: "";
+position: absolute;
+bottom: -20px;
+left: 50%;
+transform: translateX(-50%);
+width: 100px;
+height: 5px;
+background-color: var(--withe-color);
+}
+.nav-links {
+display: flex;
+justify-content: center;
+margin-top: 20px;
+}
+.nav-links a {
+color: var(--withe-color);
+margin: 0 15px;
+text-decoration: none;
+font-weight: bold;
+}
+.nav-links a:hover {
+text-decoration: underline;
+}
+.post {
+border: 1px solid #ddd;
+margin-bottom: 20px;
+padding: 20px;
+background-color: var(--withe-color);
+box-shadow: 0 4px 8px var(--shado-color1);
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.post:hover {
+transform: translateY(-5px);
+box-shadow: 0 8px 16px var(--shado-color2);
+}
+.post h2 {
+font-size: 1.5rem;
+margin-bottom: 15px;
+}
+.post p {
+color: #666;
+line-height: 1.6;
+}
+.post .btn-primary {
+background-color: var(--ancour-color);
+border: none;
+}
+.post .btn-primary:hover {
+background-color: #0056b3;
+}
+.sidebar {
+background-color: #f8f9fa;
+padding: 20px;
+border-radius: 8px;
+box-shadow: 0 4px 8px var(--shado-color1);
+margin-bottom: 20px;
+}
+.sidebar h3 {
+margin-bottom: 20px;
+font-size: 1.2rem;
+}
+.sidebar ul {
+list-style-type: none;
+padding-left: 0;
+}
+.sidebar ul li {
+margin-bottom: 10px;
+}
+.sidebar ul li a {
+color: var(--ancour-color);
+text-decoration: none;
+}
+.sidebar ul li a:hover {
+text-decoration: underline;
+}
+.footer {
+background-color: #343a40;
+color: var(--withe-color);
+text-align: center;
+padding: 20px;
+margin-top: 40px;
+}
+.footer p {
+margin: 0;
+}
